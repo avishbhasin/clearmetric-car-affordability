@@ -62,6 +62,7 @@ st.markdown("---")
 # ---------------------------------------------------------------------------
 with st.sidebar:
     st.markdown("## Your Finances")
+    st.button("🔄 Update Results", use_container_width=True)
 
     st.markdown("### Income & Debt")
     monthly_income = st.number_input(
@@ -69,14 +70,12 @@ with st.sidebar:
         value=5_000,
         min_value=0,
         step=500,
-        format="%d",
     )
     monthly_debt = st.number_input(
         "Current Monthly Debt Payments ($)",
         value=500,
         min_value=0,
         step=50,
-        format="%d",
     )
     max_car_pct = st.slider(
         "Max % of Income for Car (20/4/10 = 10%)",
@@ -92,14 +91,12 @@ with st.sidebar:
         value=5_000,
         min_value=0,
         step=500,
-        format="%d",
     )
     trade_in = st.number_input(
         "Trade-In Value ($)",
         value=0,
         min_value=0,
         step=500,
-        format="%d",
     )
 
     st.markdown("### Loan Terms")
@@ -132,21 +129,18 @@ with st.sidebar:
             value=150,
             min_value=0,
             step=25,
-            format="%d",
         )
     annual_maintenance = st.number_input(
         "Annual Maintenance Budget ($)",
         value=1_200,
         min_value=0,
         step=100,
-        format="%d",
     )
     annual_fuel = st.number_input(
         "Annual Fuel Cost ($)",
         value=2_400,
         min_value=0,
         step=200,
-        format="%d",
     )
     sales_tax_rate = st.number_input(
         "Sales Tax Rate (%)",
