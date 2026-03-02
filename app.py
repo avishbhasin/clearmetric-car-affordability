@@ -400,13 +400,13 @@ st.markdown("""
 <div class="cta-box">
     <h3 style="color: white; margin: 0 0 8px 0;">Want the Full Excel Spreadsheet?</h3>
     <p style="margin: 0 0 16px 0;">
-        Get the <strong>ClearMetric Car Affordability Calculator</strong> — $9.99<br>
+        Get the <strong>ClearMetric Car Affordability Calculator</strong> — $8.99<br>
         ✓ All inputs in one place with editable cells<br>
         ✓ Compare 3 cars side by side (price, loan, insurance, fuel, maintenance, depreciation)<br>
         ✓ 20/4/10 rule checker + How To Use guide<br>
     </p>
-    <a href="https://clearmetric.gumroad.com/l/car-affordability-calculator" target="_blank">
-        Get It on Gumroad — $9.99 →
+    <a href="https://clearmetric.gumroad.com/l/car-affordability" target="_blank">
+        Get It on Gumroad — $8.99 →
     </a>
 </div>
 """, unsafe_allow_html=True)
@@ -424,13 +424,13 @@ with cx2:
     st.markdown("""
     **🏠 Rent vs Buy** — $12.99
     Should you rent or buy? Compare true financial impact.
-    [Get it →](https://clearmetric.gumroad.com)
+    [Get it →](https://clearmetric.gumroad.com/l/rent-vs-buy)
     """)
 with cx3:
     st.markdown("""
     **🔥 FIRE Calculator** — $14.99
     Find your FIRE number, scenario comparison.
-    [Get it →](https://clearmetric.gumroad.com)
+    [Get it →](https://clearmetric.gumroad.com/l/fire-calculator)
     """)
 
 # Footer
