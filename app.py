@@ -374,11 +374,16 @@ else:
     if not rule_4_year:
         reasons.append(f"4-year loan: you chose {loan_term} months")
     if not rule_10_pct:
-        pct = (total_car_costs_monthly / monthly_income) * 100
-        reasons.append(
-            f"10% of income: car costs are {pct:.1f}% of income "
-            f"(${total_car_costs_monthly:,.0f}/mo)"
-        )
+        if monthly_income > 0:
+            pct = (total_car_costs_monthly / monthly_income) * 100
+            reasons.append(
+                f"10% of income: car costs are {pct:.1f}% of income "
+                f"(${total_car_costs_monthly:,.0f}/mo)"
+            )
+        else:
+            reasons.append(
+                f"10% of income: no income entered — car costs ${total_car_costs_monthly:,.0f}/mo"
+            )
     st.warning(
         "**You don't pass the 20/4/10 rule.** "
         + "; ".join(reasons)
